@@ -10,6 +10,8 @@
 
 * Redux
 
+* Thunk
+
 * MongoDB
 
 * ...
