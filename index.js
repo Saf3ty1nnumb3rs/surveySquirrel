@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require('mongoose');
 const cookieSession = require('cookie-session');
 const passport = require('passport');
+const bodyParser =  require('body-parser');
 const keys = require('./config/keys');
 //MUST REQUIRE MODEL BEFORE USING MODEL - ORDER MATTERS
 require('./models/User');
@@ -11,6 +12,8 @@ mongoose.connect(keys.mongoURI);
 
 const app = express();
 //COOKIE AND PASSPORT INITIALIZATION
+
+app.use(bodyParser.json())
 app.use(
     cookieSession({
         maxAge: 30 * 24 * 60 * 60 * 1000,
@@ -21,6 +24,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 // requires exported function and immediately calls it using 'app'
 require('./routes/authController')(app);
+require('./routes/billingController')(app);
 
 //Dynamic port binding for deployment
 const PORT = process.env.PORT || 5000;
