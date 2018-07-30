@@ -26,6 +26,7 @@ app.use(passport.session());
 // requires exported function and immediately calls it using 'app'
 require('./routes/authController')(app);
 require('./routes/billingController')(app);
+require('./routes/surveyController')(app);
 
 if(process.env.NODE_ENV === 'production'){
     //Express will serve up production assets

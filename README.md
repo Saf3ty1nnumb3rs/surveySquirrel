@@ -1,3 +1,5 @@
+### Technologies Utilized for Survey Squirrel
+
 * Node.js
 
 * Express.js
@@ -13,5 +15,7 @@
 * Thunk
 
 * MongoDB
+
+* Stripe
 
 * ...
