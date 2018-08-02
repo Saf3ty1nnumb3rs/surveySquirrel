@@ -5,10 +5,10 @@ import * as actions from '../actions';
 
 import Header from "./Header";
 import Landing from "./Landing";
-import Dashboard from "./Dashboard"
+import Dashboard from "./Dashboard";
+import SurveyNew from './surveys/SurveyNew';
 
 
-const SurveyNew = () => <h2>SurveyNew</h2>;
 
 class App extends Component {
 
@@ -20,7 +20,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div>
        
         <Router>
           <div>
