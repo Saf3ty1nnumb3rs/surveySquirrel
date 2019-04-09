@@ -3,7 +3,7 @@
 
 ![Squirrel](http://www.squirrelcensus.com/wp-content/uploads/squirrel-on-hand-300x245.gif)
 
-## Survey Squirrel utilizes OAuth/Pasport for authentication while using the MERN stack to create an application that will register users, allow them to create surveys, build client lists, distribute surveys through email, and get the results back. This is all built around a payment system that allows you to purchase "tokens" for each survey distribution.
+## Survey Squirrel utilizes OAuth/Passport for authentication while using the MERN stack to create an application that will register users, allow them to create surveys, build client lists, distribute surveys through email, and get the results back. This is all built around a payment system that allows you to purchase "tokens" for each survey distribution.
 
 ## <a href="https://enigmatic-peak-96284.herokuapp.com/" name="Heroku">Heroku Deployment</a>
 
